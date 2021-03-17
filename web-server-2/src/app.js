@@ -29,7 +29,7 @@ app.get('/weather', (req, res) => {
     });
   }
 
-  geocode(req.query.address, (err, { latitude, longitude, location }) => {
+  geocode(req.query.address, (err, { latitude, longitude, location } = {}) => {
     if (!req.query.address) {
       return res.send('Please provide a valid city name.');
     }

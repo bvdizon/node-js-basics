@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <main class="container">
+    <main class="container" id="main">
       {{>header}}
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
@@ -21,6 +21,15 @@
         tempore culpa quo cumque dolores totam dicta iste blanditiis, est
         ratione.
       </p>
+
+      <form id="enterAddress">
+        <input type="text" name="address" id="address">
+        <input type="submit" value="Check Forecast">
+      </form>
+      
+      <div id="forecast">
+      </div>
+
     </main>
 
     {{>footer}}
